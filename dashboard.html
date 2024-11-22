@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <span id="username-display"></span>
+        </header>
+        <div class="tabs">
+            <button class="tab-button" data-tab="Statistics">Statistics</button>
+            <button class="tab-button" data-tab="Verification Manager">Verification Manager</button>
+            <button class="tab-button" data-tab="User Management">User Management</button>
+            <button class="tab-button" data-tab="Settings">Settings</button>
+            <button id="logout-tab" class="tab-button">Log Out</button>
+        </div>
+        <main>
+            <h1 id="tab-content">Select a tab to view its content.</h1>
+            <div id="user-management" class="hidden">
+                <h2 class="center-text">User Management</h2>
+                <button id="open-add-user-modal" class="styled-button">Add User</button>
+                <ul id="user-list"></ul>
+            </div>
+        </main>
+    </div>
+    <div class="modal-overlay">
+        <div class="modal"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
